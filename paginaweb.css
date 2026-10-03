@@ -68,7 +68,7 @@ main{
 }
 #nota {
 	background-color: lightgoldenrodyellow;
-	padding: 10px;
+	padding: 20px;
     order: -1;
     width: 280px;
     margin: 20px;
@@ -79,14 +79,10 @@ main{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border: 2px solid #f3a294;
     position: relative;
-	max-height: 220px;
-	aspect-ratio: 1 / 1;
+
 }
 
-#nota p {
-  font-size: 3vw !important;   /* Reduce un poco la letra para que se adapte al espacio del cuadrado */
-  margin: 0 0 5px 0;           /* Quita márgenes excesivos */
-  text-align: center;
+
 #pixel-art {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
