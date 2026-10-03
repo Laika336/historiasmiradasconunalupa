@@ -79,19 +79,3 @@ clasificacion {
   width: fit-content;
 }
 
-.clasificacion input {
-  display: none; /* Oculta los radio button nativos */
-}
-
-.clasificacion label {
-  color: #d2d2d2; /* Color gris por defecto para estrellas vacías */
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-/* Cambia el color al pasar el cursor o mantener seleccionado */
-.clasificacion input:checked ~ label,
-.clasificacion label:hover,
-.clasificacion label:hover ~ label {
-  color: #f8ce0b; /* Color dorado para las estrellas valoradas */
-}
