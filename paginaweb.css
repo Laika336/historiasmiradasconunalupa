@@ -1,15 +1,28 @@
+@media screen and (max-width: 600px) {
+
+  body {
+    margin: 0;
+    padding: 8px;
+  }
+	
 #cabeceraweb{
    background-color:#ABE0DA;
    color:white;
    font-family:Notable ;
    padding: 10px;
-   font-size: 50PX;
+	 font-size: clamp(24px, 7vw, 36px);
+    overflow-wrap: break-word;
 
 }
 #categorias {
     background-color: #EDEDED;
     font-family: Ribeye;
     text-align: center;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
 }
 
 #categorias a {
@@ -17,6 +30,8 @@
     color: black;
     padding: 10px;
     text-decoration: none;
+	font-size: 15px;
+    padding: 5px;
 }
 
 #categorias a:hover {
@@ -24,11 +39,16 @@
 }
 main{
 	display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 #article1 {
-    width: 70%;
+    width: 100%;
     padding: 20px;
     font-family:Life Savers
+	box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
 
 ;
 }
@@ -58,6 +78,7 @@ main{
   height: auto;
   top: 180px;   /* Distancia desde el borde superior del aside */
   left: 25px;   /* Distancia desde el borde izquierdo del aside */
+	max-width: 100%;
     }
 #dlazos
 {
