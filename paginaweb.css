@@ -6,6 +6,29 @@
    font-size: 50PX;
 
 }
+/* Estilos para pantallas de móviles (menos de 768px de ancho) */
+@media (max-width: 768px) {
+  
+  /* Hace que el contenedor principal ordene las cosas hacia abajo en vez de hacia los lados */
+  .tu-contenedor-principal { 
+    display: flex;
+    flex-direction: column; /* Apila los elementos en vertical */
+    align-items: center;    /* Los centra en la pantalla del móvil */
+    width: 100%;
+  }
+
+  /* Hace que los bloques de texto ocupen casi todo el ancho del móvil */
+  .tu-caja-de-texto, .tu-caja-amarilla {
+    width: 90% !important;
+    margin: 10px auto;      /* Separa las cajas para que no estén pegadas entre sí */
+  }
+
+  /* Ajusta las imágenes para que no se salgan de la pantalla del móvil */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 #categorias {
     background-color: #EDEDED;
     font-family: Ribeye;
