@@ -39,32 +39,40 @@
 }
 main{
 	display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
 }
 #article1 {
-    width: 100%;
-    padding: 20px;
+    width: auto;
+    padding: 10px;
     font-family:Life Savers
 	box-sizing: border-box;
     max-width: 100%;
     margin: 0;
+	flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
 
 ;
 }
 #nota {
 	background-color: lightgoldenrodyellow;
-	padding: 20px;
+	padding: 10px;
     order: -1;
-    width: 280px;
-    margin: 20px;
+    width: 25%;
+    margin: 0px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 12px;
     font-family: "Life Savers";
     box-sizing: border-box;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border: 2px solid #f3a294;
     position: relative;
+	flex: 0 0 25%;
+  overflow-wrap: break-word;
 }
 #pixel-art {
   image-rendering: pixelated;
