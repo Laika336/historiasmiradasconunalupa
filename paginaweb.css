@@ -37,7 +37,7 @@
 #categorias a:hover {
     color:#27D8DB;
 }
-main{
+#main{
 	display: flex;
     flex-direction: row;
     gap: 16px;
