@@ -68,18 +68,25 @@ main{
 }
 #nota {
 	background-color: lightgoldenrodyellow;
-	padding: 20px;
+	padding: 10px;
     order: -1;
     width: 280px;
     margin: 20px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 18vw;
     font-family: "Life Savers";
     box-sizing: border-box;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
     border: 2px solid #f3a294;
     position: relative;
+	max-height: 220px;
+	aspect-ratio: 1 / 1;
 }
+
+#nota p {
+  font-size: 3vw !important;   /* Reduce un poco la letra para que se adapte al espacio del cuadrado */
+  margin: 0 0 5px 0;           /* Quita márgenes excesivos */
+  text-align: center;
 #pixel-art {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
